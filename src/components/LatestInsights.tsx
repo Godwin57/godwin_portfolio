@@ -35,10 +35,10 @@ export default function LatestInsights() {
     <section className="py-24" id="blog">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-12">
-          <h2 className="text-3xl font-bold text-white mb-2">
+          <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
             Latest Insights
           </h2>
-          <p className="text-slate-400">
+          <p className="text-slate-600 dark:text-slate-400">
             Thoughts on software architecture and web development.
           </p>
         </div>
@@ -70,12 +70,12 @@ export default function LatestInsights() {
               </div>
 
               {/* Title */}
-              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-primary transition-colors">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
                 {article.title}
               </h3>
 
               {/* Excerpt */}
-              <p className="text-sm text-slate-400 line-clamp-2">
+              <p className="text-sm text-slate-600 dark:text-slate-400 line-clamp-2">
                 {article.excerpt}
               </p>
             </article>

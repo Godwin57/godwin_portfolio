@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Testimonial() {
   return (
-    <section className="py-20 bg-slate-900/30">
+    <section className="py-20 bg-slate-100 dark:bg-slate-900/30">
       <div className="max-w-4xl mx-auto px-4 text-center">
         <div className="mb-8 text-primary">
           <span className="material-symbols-outlined !text-6xl opacity-50">
@@ -10,7 +10,7 @@ export default function Testimonial() {
           </span>
         </div>
 
-        <blockquote className="text-2xl md:text-3xl font-medium text-white leading-relaxed mb-8">
+        <blockquote className="text-2xl md:text-3xl font-medium text-slate-900 dark:text-white leading-relaxed mb-8">
           &ldquo;Godwin delivered an exceptionally robust architecture that
           scaled effortlessly as our user base grew 10x. His attention to detail
           and mastery of React is unmatched.&rdquo;
@@ -26,8 +26,12 @@ export default function Testimonial() {
             />
           </div>
           <div className="text-left">
-            <div className="font-bold text-white">Alex Morgan</div>
-            <div className="text-sm text-slate-400">CTO at TechFlow</div>
+            <div className="font-bold text-slate-900 dark:text-white">
+              Alex Morgan
+            </div>
+            <div className="text-sm text-slate-600 dark:text-slate-400">
+              CTO at TechFlow
+            </div>
           </div>
         </div>
       </div>

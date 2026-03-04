@@ -25,10 +25,10 @@ export default function FeaturedProjects() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div>
-            <h2 className="text-3xl font-bold text-white mb-2">
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">
               Featured Projects
             </h2>
-            <p className="text-slate-400">
+            <p className="text-slate-600 dark:text-slate-400">
               Selected works that showcase complex problem solving.
             </p>
           </div>
@@ -45,7 +45,7 @@ export default function FeaturedProjects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="group relative rounded-2xl overflow-hidden bg-surface-dark border border-slate-800 hover:border-primary/50 transition-all duration-300"
+              className="group relative rounded-2xl overflow-hidden bg-white dark:bg-surface-dark border border-slate-200 dark:border-slate-800 hover:border-primary/50 transition-all duration-300 shadow-sm hover:shadow-xl"
             >
               {/* Image */}
               <div className="aspect-video w-full overflow-hidden relative">
@@ -61,14 +61,14 @@ export default function FeaturedProjects() {
               <div className="p-6 md:p-8">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">
+                    <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
                       {project.title}
                     </h3>
                     <div className="flex flex-wrap gap-2 text-xs font-medium text-slate-400">
                       {project.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="px-2 py-1 rounded bg-slate-800 text-slate-300"
+                          className="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300"
                         >
                           {tag}
                         </span>
@@ -76,7 +76,7 @@ export default function FeaturedProjects() {
                     </div>
                   </div>
                   <a
-                    className="p-2 rounded-full bg-slate-800 hover:bg-primary hover:text-white transition-colors text-slate-400"
+                    className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary dark:hover:bg-primary hover:text-white transition-colors text-slate-600 dark:text-slate-400"
                     href="#"
                   >
                     <span className="material-symbols-outlined">
@@ -84,9 +84,11 @@ export default function FeaturedProjects() {
                     </span>
                   </a>
                 </div>
-                <p className="text-slate-400 mb-6">{project.description}</p>
+                <p className="text-slate-600 dark:text-slate-400 mb-6">
+                  {project.description}
+                </p>
                 <a
-                  className="text-sm font-bold text-white border-b border-primary pb-0.5 hover:text-primary transition-colors"
+                  className="text-lg md:text-2xl font-bold text-slate-900 dark:text-white hover:text-primary dark:hover:text-primary border-b border-primary pb-0.5 transition-colors"
                   href="#"
                 >
                   View Case Study
