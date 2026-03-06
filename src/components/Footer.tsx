@@ -30,7 +30,7 @@ export default function Footer() {
             <span>Godwin Emeribe</span>
           </div>
           <div className="text-sm text-slate-500">
-            © 2024 Godwin Emeribe. All rights reserved.
+            © 2026 Godwin Emeribe. All rights reserved.
           </div>
           <div className="flex gap-6">
             <a
