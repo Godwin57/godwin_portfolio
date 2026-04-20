@@ -31,9 +31,10 @@ export default function HeroSection() {
                 </span>
               </h1>
               <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-lg leading-relaxed">
-                Senior Fullstack Developer crafting high-performance web
-                experiences with React, NextJS, and TypeScript. Building the
-                future of the web, one component at a time.
+                Fullstack Developer & AI powered UI/ UX designer crafting
+                high-performance web experiences with React, NextJS, and
+                TypeScript. Building the future of the web, one component at a
+                time.
               </p>
             </div>
 
@@ -117,7 +118,7 @@ export default function HeroSection() {
                   Projects Completed
                 </p>
                 <p className="text-lg font-bold text-slate-900 dark:text-white">
-                  120+
+                  10+
                 </p>
               </div>
             </div>

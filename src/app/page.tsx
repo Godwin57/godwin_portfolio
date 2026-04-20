@@ -14,8 +14,8 @@ export default function Home() {
         <HeroSection />
         <CoreTechnologies />
         <FeaturedProjects />
-        <Testimonial />
-        <LatestInsights />
+        {/* <Testimonial /> */}
+        {/* <LatestInsights /> */}
       </main>
       <Footer />
     </>

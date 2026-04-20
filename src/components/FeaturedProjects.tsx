@@ -2,20 +2,22 @@ import Image from "next/image";
 
 const projects = [
   {
-    title: "E-commerce Dashboard",
+    title: "My Campus Lodge",
     image: "/images/ecommerce_dashboard.jpg",
-    alt: "Screenshot of an E-commerce analytics dashboard with graphs",
+    alt: "Screenshot of a facility management software",
     tags: ["NextJS", "TypeScript", "Tailwind"],
     description:
-      "A high-performance analytics dashboard for online retailers featuring real-time data visualization and inventory management.",
+      " A comprehensive and robust facility management system developed for a caretaker to manage facilities under his care. The facility management software involves several features and capability such as student verification, automated rent expiry reminder, student identity card generation and a lot more!",
+    link: "https://mycampuslodge.com",
   },
   {
-    title: "Fintech Mobile App",
-    image: "/images/fintech_mobile_app.jpg",
-    alt: "Screenshot of a mobile fintech application interface",
-    tags: ["React Native", "Redux", "Node.js"],
+    title: "Auxano",
+    image: "/images/auxano.png",
+    alt: "Screenshot of Auxano web agency's landing page",
+    tags: ["NextJS", "TypeScript", "Tailwind"],
     description:
-      "Secure and intuitive banking application with real-time updates, biometric authentication, and spending insights.",
+      "A storefront for a classic web agency which offers web design services to various clients",
+    link: "https://auxano-zeta.vercel.app/",
   },
 ];
 
@@ -77,7 +79,7 @@ export default function FeaturedProjects() {
                   </div>
                   <a
                     className="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-primary dark:hover:bg-primary hover:text-white transition-colors text-slate-600 dark:text-slate-400"
-                    href="#"
+                    href={project.link}
                   >
                     <span className="material-symbols-outlined">
                       north_east
@@ -89,9 +91,9 @@ export default function FeaturedProjects() {
                 </p>
                 <a
                   className="text-lg md:text-2xl font-bold text-slate-900 dark:text-white hover:text-primary dark:hover:text-primary border-b border-primary pb-0.5 transition-colors"
-                  href="#"
+                  href={project.link}
                 >
-                  View Case Study
+                  View Project
                 </a>
               </div>
             </div>
