@@ -39,12 +39,6 @@ export default function Header() {
             </a>
             <a
               className="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors"
-              href="#blog"
-            >
-              Blog
-            </a>
-            <a
-              className="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-primary dark:hover:text-primary transition-colors"
               href="#contact"
             >
               Contact
